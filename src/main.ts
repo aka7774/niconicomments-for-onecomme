@@ -40,7 +40,7 @@ const init = async () => {
           (comment: CommonData) => {
             processedComments.push(comment.data.id);
             return {
-              content: comment.data.comment.replace(/<img.*?alt=":?(.*?)".*?>/ig, '$1').replace("&#34;", '"').replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">"),
+              content: comment.data.comment.replace(/<img.*?alt=":?(.*?)".*?>/ig, '$1').replace(/&#34;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">"),
               date: Math.floor(comment.data.timestamp / 1000),
               date_usec: Number(comment.data.timestamp.toString().slice(-3)),
               id: processedComments.length,
