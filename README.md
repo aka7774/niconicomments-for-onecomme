@@ -1,3 +1,6 @@
+fork 0.8.1
+- LIMIT を 1000 から 30 に減らしてwsの負荷が変わるかテスト
+
 # niconicomments for onecomme
 
 
