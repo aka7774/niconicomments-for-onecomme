@@ -10,7 +10,7 @@ import { applyCommands } from "@/utils/command";
 import { info } from "@/utils/logger";
 
 const JSON_PATH = "../../comment.json";
-const LIMIT = 30;
+const LIMIT = 1000;
 
 const init = async () => {
   const rootElement = document.getElementById("app") as HTMLDivElement;
