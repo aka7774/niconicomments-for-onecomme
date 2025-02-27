@@ -26,7 +26,7 @@ const init = async () => {
     info("fail to get canvas");
     return;
   }
-  window.OneSDK.setup({ jsonPath: JSON_PATH, commentLimit: LIMIT });
+  window.OneSDK.setup({ jsonPath: JSON_PATH, commentLimit: LIMIT, mode: 'diff' });
   const nico = new NiconiComments(canvas, [], {
     format: "formatted",
     config: {
